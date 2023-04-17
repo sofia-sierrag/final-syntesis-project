@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="js/mathjax.js"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <header>
+    <h1 id="main-title">Final Project</h1>
+  </header>
+  <body>
+    <div class="tab">
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'tab1')"
+        id="tab1-button"
+      >
+        Introduction
+      </button>
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'tab2')"
+        id="tab2-button"
+      >
+        Analysis 1
+      </button>
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'tab3')"
+        id="tab3-button"
+      >
+        Analysis 2
+      </button>
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'tab4')"
+        id="tab4-button"
+      >
+        Analysis 3
+      </button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="tab1" class="tabcontent"></div>
+    <div id="tab2" class="tabcontent"></div>
+    <div id="tab3" class="tabcontent"></div>
+    <div id="tab4" class="tabcontent"></div>
+
+    <script>
+      const texts = ["tab1", "tab2", "tab3", "tab4"];
+      for (let i = 0; i < texts.length; i++) {
+        $("#" + texts[i] + "-button").click(function () {
+          $("#" + texts[i]).load("html/" + texts[i] + ".html");
+        });
+      }
+    </script>
+
+    <script>
+      $("#tab1-button").click();
+    </script>
+  </body>
+
+  <footer>
+    <a href="#main-title"> Go up</a> <br />
+    <a href="mailto:example@gmail.com">Contact us</a>
+    <br />
+    Creative commons licence
+  </footer>
+</html>

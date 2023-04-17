@@ -1,0 +1,148 @@
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+header h1 {
+  background-color: #364552;
+  color: white;
+  padding: 3rem 2rem;
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  font-size: 2rem;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h4 {
+  font-size: 1.5rem;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h5 {
+  font-size: 1rem;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body p {
+  margin: 1rem 0;
+  padding: 1rem 1rem;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul,
+li {
+  background-color: #fff;
+  margin: 1rem 0;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*body p:hover {
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}*/
+
+footer {
+  background-color: #222;
+  padding: 3rem;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: cornflowerblue;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 800px;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 0.25rem 0;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-top: none;
+  border-radius: 0.5rem;
+  width: 800px;
+  margin: 1rem auto;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
